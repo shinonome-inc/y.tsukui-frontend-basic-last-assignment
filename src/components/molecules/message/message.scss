@@ -1,0 +1,49 @@
+@use "../../variables" as *;
+
+.text-wrap {
+  width: 100%;
+  display: flex;
+  text-align: center;
+  align-items: center;
+  flex-direction: column;
+
+  h2 {
+    display: inline;
+    font-family: $fontfamily-mincho;
+
+    @media (min-width: 0px) {
+      width: 160px;
+      height: 30px;
+      font-size: $L;
+      line-height: 30px;
+    }
+
+    @media (min-width: $large) {
+      width: 287px;
+      height: 54px;
+      font-size: $XL;
+      line-height: 54px;
+    }
+  }
+
+  h3 {
+    display: inline;
+    font-family: $fontfamily-gothic;
+
+    @media (min-width: 0px) {
+      width: 84px;
+      height: 28px;
+      padding: 0px;
+      font-size: $S;
+      margin-top: 6px;
+      line-height: 28px;
+    }
+
+    @media (min-width: $large) {
+      width: 84px;
+      height: 36px;
+      margin-top: 10px;
+      line-height: 36px;
+    }
+  }
+}
