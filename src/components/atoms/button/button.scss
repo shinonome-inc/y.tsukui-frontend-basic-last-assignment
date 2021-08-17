@@ -1,0 +1,37 @@
+@use "../../variables" as *;
+
+.btn-text {
+  color: $white;
+  display: inline-block;
+  padding: 0px 16px;
+  font-size: $S;
+  text-align: center;
+  transition: all, 0s, ease, 0.2s;
+  font-family: $fontfamily-gothic;
+  border-radius: 0px;
+  background-color: $black;
+
+  &:hover {
+    color: $white;
+    text-decoration: none;
+    background-color: $orange-bistre;
+  }
+
+  @media (min-width: 0px) {
+    width: 180px;
+    height: 45px;
+    line-height: 45px;
+  }
+
+  @media (min-width: $small) {
+    width: 150px;
+    height: 55px;
+    line-height: 55px;
+  }
+
+  @media (min-width: $large) {
+    width: 200px;
+    height: 55px;
+    line-height: 55px;
+  }
+}
