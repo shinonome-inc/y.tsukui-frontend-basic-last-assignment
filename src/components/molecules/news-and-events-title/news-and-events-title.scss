@@ -1,0 +1,33 @@
+@use "../../variables" as *;
+
+.naet {
+  display: flex;
+  align-items: center;
+
+  h2 {
+    font-family: $fontfamily-mincho;
+
+    @media (min-width: 0px) {
+      width: 53px;
+      height: 29px;
+      font-size: $L;
+      line-height: 29px;
+    }
+
+    @media (min-width: $large) {
+      width: 105px;
+      height: 57px;
+      font-size: $XXL;
+      line-height: 57px;
+    }
+  }
+  
+  h3 {
+    width: 64px;
+    height: 23px;
+    font-size: $M;
+    line-height: 23px;
+    font-family: $fontfamily-gothic;
+    margin-left: 16px;
+  }
+}
